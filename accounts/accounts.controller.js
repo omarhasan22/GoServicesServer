@@ -5,6 +5,10 @@ const validateRequest = require('_middleware/validate-request');
 const authorize = require('_middleware/authorize')
 const Role = require('_helpers/role');
 const accountService = require('./account.service');
+var cors = require('cors');
+
+router.use(cors());
+
 
 
 // routes
