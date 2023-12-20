@@ -1,13 +1,13 @@
 ﻿{
     "connectionString": "mongodb+srv://omarhasan3894:rh0Xfd8Dgt1faIxK@cluster0.had4kfb.mongodb.net/?retryWrites=true&w=majority",
     "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
-    "emailFrom":"beau21@ethereal.email",
+    "emailFrom":"omar.hasan3894@gmail.com",
     "smtpOptions": {
-        "host": "smtp.ethereal.email",
+        "host": "smtp-relay.brevo.com",
         "port": 587,
         "auth": {
-           "user": "beau21@ethereal.email",
-            "pass": "CFXdK8dMHaU8qRyw62"
+           "user": "omar.hasan3894@gmail.com",
+            "pass": "dhUaKpnbYt8W5REZ"
         }
     }
 }
