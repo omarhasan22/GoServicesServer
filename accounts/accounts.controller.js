@@ -9,13 +9,13 @@ const accountService = require('./account.service');
 
 
 
-router.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://omarhasan22.github.io');
-    // Other CORS headers can be added as needed
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    next();
-  });
+// router.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', 'https://omarhasan22.github.io');
+//     // Other CORS headers can be added as needed
+//     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+//     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//     next();
+//   });
 
 // routes
 router.post('/authenticate', authenticateSchema, authenticate);
