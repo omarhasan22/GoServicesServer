@@ -5,9 +5,18 @@ const validateRequest = require('_middleware/validate-request');
 const authorize = require('_middleware/authorize')
 const Role = require('_helpers/role');
 const accountService = require('./account.service');
-var cors = require('cors');
 
-router.use(cors());
+
+
+
+router.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://omarhasan22.github.io');
+    // Other CORS headers can be added as needed
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+  });
+
 // routes
 router.post('/authenticate', authenticateSchema, authenticate);
 router.post('/refresh-token', refreshToken);
