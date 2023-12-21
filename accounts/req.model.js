@@ -32,4 +32,4 @@ schema.set('toJSON', {
     // }
 });
 
-module.exports = mongoose.model('req', schema);
+module.exports = mongoose.model('reqGoServices', schema);
