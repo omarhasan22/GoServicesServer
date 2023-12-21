@@ -1,5 +1,5 @@
 ﻿{
-    "connectionString": "mongodb+srv://omarhasan22:81195404OMAR@cluster0.e47czbw.mongodb.net/?retryWrites=true&w=majority",
+    "connectionString": "mongodb+srv://goServices:m8F9ahegKs6fDGeG@cluster0.aujwgrf.mongodb.net/?retryWrites=true&w=majority",
     "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
     "emailFrom":"omar.hasan3894@gmail.com",
     "smtpOptions": {
