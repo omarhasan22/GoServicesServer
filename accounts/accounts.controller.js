@@ -20,7 +20,7 @@ router.post('/verify-email', verifyEmailSchema, verifyEmail);
 router.post('/forgot-password', forgotPasswordSchema, forgotPassword);
 router.post('/validate-reset-token', validateResetTokenSchema, validateResetToken);
 router.post('/reset-password', resetPasswordSchema, resetPassword);
-router.get('/c', authorize(), getAllCareer);
+router.get('/c', getAllCareer);
 router.get('/N/:career', authorize(), getAllCareerN);
 router.get('/', authorize(Role.Admin), getAll);
 router.get('/s/:name', authorize(), searchByName);
