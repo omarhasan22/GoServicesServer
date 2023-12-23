@@ -21,11 +21,11 @@ router.post('/forgot-password', forgotPasswordSchema, forgotPassword);
 router.post('/validate-reset-token', validateResetTokenSchema, validateResetToken);
 router.post('/reset-password', resetPasswordSchema, resetPassword);
 router.get('/c', getAllCareer);
-router.get('/N/:career', authorize(), getAllCareerN);
+router.get('/N/:career', getAllCareerN);
 router.get('/', authorize(Role.Admin), getAll);
-router.get('/s/:name', authorize(), searchByName);
+router.get('/s/:name', searchByName);
 //router.get('/:role', authorize(), getByRole);
-router.get('/I/:id', authorize(), getById);
+router.get('/I/:id',  getById);
 router.post('/', authorize(Role.Admin), createSchema, create);
 router.put('/:id', authorize(), updateSchema, update);
 router.delete('/:id', authorize(), _delete),
