@@ -34,7 +34,7 @@ async function authenticate({ email, password, ipAddress }) {
     
     const account = await db.Account.findOne({ email });
    //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    console.log(account)
+    //console.log(account)
   
     if (!account  || !account.isVerified||  !bcrypt.compareSync(password, account.passwordHash) ) {
         throw 'Email or password is incorrect';
